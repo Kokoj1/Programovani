@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" maxHeight="700.0" maxWidth="500.0" minHeight="0.0" minWidth="0.0" onMouseEntered="#chooseSubject" spacing="20.0" style="-fx-background-color: #3C8FD1;" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.programovani.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label text="Hodnocení žáka">
+      <font>
+         <Font name="System Bold" size="29.0" />
+      </font>
+   </Label>
+   <Label alignment="TOP_LEFT" text="Jméno">
+      <VBox.margin>
+         <Insets right="400.0" />
+      </VBox.margin>
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+   <TextField fx:id="name" maxHeight="25.0" maxWidth="450.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="450.0" style="-fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets top="-15.0" />
+      </VBox.margin></TextField>
+   <Label text="Příjmení">
+      <VBox.margin>
+         <Insets right="400.0" />
+      </VBox.margin>
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+   <TextField fx:id="surname" maxHeight="25.0" maxWidth="450.0" prefHeight="25.0" prefWidth="450.0" style="-fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets top="-15.0" />
+      </VBox.margin></TextField>
+   <Label prefHeight="17.0" prefWidth="53.0" text="Známky">
+      <VBox.margin>
+         <Insets right="400.0" />
+      </VBox.margin>
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font></Label>
+   <TextField fx:id="grade" maxHeight="25.0" maxWidth="450.0" prefHeight="25.0" prefWidth="450.0" style="-fx-background-radius: 20;" VBox.vgrow="ALWAYS">
+      <VBox.margin>
+         <Insets bottom="10.0" top="-15.0" />
+      </VBox.margin></TextField>
+   <FlowPane maxHeight="20.0" maxWidth="450.0" minWidth="450.0" prefHeight="20.0" prefWidth="450.0">
+      <children>
+         <ChoiceBox fx:id="subjectChoiceBox" prefWidth="150.0" style="-fx-border-radius: 20px; -fx-background-radius: 20px; -fx-background-color: #C8F6FF;">
+            <FlowPane.margin>
+               <Insets left="98.0" />
+            </FlowPane.margin>
+         </ChoiceBox>
+         <Button fx:id="save" mnemonicParsing="false" onAction="#onSaveButtonClick" style="-fx-background-radius: 20px; -fx-border-radius: 20; -fx-background-color: #C8F6FF;" text="Potvrdit">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+            <FlowPane.margin>
+               <Insets left="30.0" />
+            </FlowPane.margin>
+         </Button>
+      </children>
+   </FlowPane>
+   <ListView fx:id="view" maxHeight="200.0" maxWidth="450.0" minHeight="200.0" minWidth="450.0" prefHeight="200.0" prefWidth="450.0" style="-fx-background-color: #A0EFFF; -fx-border-radius: 20px; -fx-border-radius: 20px; -fx-border-radius: 20px; -fx-background-radius: 20px;" VBox.vgrow="ALWAYS" />
+</VBox>
