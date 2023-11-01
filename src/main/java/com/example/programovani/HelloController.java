@@ -61,7 +61,7 @@ public class HelloController implements Initializable {
         subjectChoiceBox.getItems().add("Matematika");
         subjectChoiceBox.getItems().add("Český jazyk");
         subjectChoiceBox.getItems().add("Fyzika");
-        subjectChoiceBox.getItems().add("Progravování");
+        subjectChoiceBox.getItems().add("Programování");
         subjectChoiceBox.getItems().add("Počítačové sítě");
     }
     int n = 0;
